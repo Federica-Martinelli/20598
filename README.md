@@ -21,5 +21,5 @@ The files for this project are organized in the following way:
 2.  Folder __json_files__: Contains 2 files:
     *  __abi_v2.json__: TO BE COMPLETED
     *  __bytecode_v2.json__: TO BE COMPLETED
-3.  File __Contributors_Information.txt__: File which contains the daily tasks carried out by the team to complete the project 
-4.  File __NGOs_Fintech.pdf__: File which contains the presentation/report which explains our project in a more complete way
+3.  File __Contributors_Information.txt__: Contains the daily tasks carried out by the team to complete the project 
+4.  File __NGOs_Fintech.pdf__: Contains the presentation/report which explains our project in a more complete way
