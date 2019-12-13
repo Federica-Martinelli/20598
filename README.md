@@ -1,4 +1,10 @@
-# 20598
+# 20598 - FinTech for NGOs
 
-9/12
-The team meets to discuss which functions to include in the solidity contract. We assign to each member of the team a section of the report to write
+## Getting Started
+For this university project we implemented a smart contract with the aim of applying blockchain technology to the NGO world.
+The main purpose is to combat fraud and increase people's trust in NGOs.
+
+The key aspect of the contract is its immutable mission, location, goal and deadline once deployed as well as the presence of a consensus-based payment function as a safety feature to combat embezzlement.
+
+## Project Organization
+Complete...
