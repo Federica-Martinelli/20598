@@ -1,0 +1,152 @@
+pragma solidity ^ 0.4.25;
+
+contract ngoProject {
+    // define contract variables
+    uint public totalMiners=0; // number of whitelist information miners added to contract by admin
+    uint public deadline; // deadline of the project calculated according to contract block number + deadline divided byt mining time of a block  
+    uint public goal; // required money of project
+    uint public raisedAmount = 0 ; // amount raised for project initialised to 0
+    string public mission; // decription of the aim of the project
+    string public location; // location of the project (country, continent, etc.)
+    mapping(address=>bool) public ngoMiners; // array mapping of miners to track votes and avoid double voting
+    address public admin; // sets who created the contract and is admin for expenses
+    mapping(address=>uint) public donations; // store donations by address for refunds if need be 
+
+    
+    // structure representing a payment request which will have to be voted on
+    struct  PaymentRequest  {
+        string description;
+        uint value;
+        address recipient;
+        bool completed;
+        uint numberOfVotes;
+        mapping(address=>bool) voted;
+    }
+    
+    // array storing all payment requests
+    PaymentRequest[] public paymentRequests; 
+    
+    // constructor of the contract with important static variables that will be immutable throughout lifetime
+    constructor(string _mission, string _location, uint _deadline, uint _goal) public{
+        deadline=block.number + _deadline; // average 12 sec per block so need to automate a calc? 
+        goal=_goal;
+        location = _location;
+        mission = _mission;
+        admin = msg.sender;
+    }
+    
+    // utility modifier to enable only admin use oon certain functions
+    modifier onlyAdmin {
+        require(msg.sender == admin); // account of the NGO behind the project
+        _;
+    }
+    
+    // function only used by admin to whitelist information miners for the contract
+    function addMiner(address newAddress) public onlyAdmin{
+        ngoMiners[newAddress] = true;
+        
+        totalMiners++;
+    }
+    
+    // utility function to convert uint into string and then concat to error message
+    function appendUintToString(string inStr, uint v) internal pure returns (string str) {
+        uint maxlength = 100;
+        bytes memory reversed = new bytes(maxlength);
+        uint i = 0;
+        while (v != 0) {
+            uint remainder = v % 10;
+            v = v / 10;
+            reversed[i++] = byte(48 + remainder);
+        }
+        bytes memory inStrb = bytes(inStr);
+        bytes memory s = new bytes(inStrb.length + i);
+        uint j;
+        for (j = 0; j < inStrb.length; j++) {
+            s[j] = inStrb[j];
+        }
+        for (j = 0; j < i; j++) {
+            s[j + inStrb.length] = reversed[i - 1 - j];
+        }
+        str = string(s);
+    }
+    
+    // function to donate money to the ngo project 
+    // requires goal and deadline not reached
+    function donate() public payable {
+        // if goal has been reached display in message
+        if(raisedAmount == goal)
+        {
+            string memory warning = 'Goal has been reached.';
+        }
+        else if((raisedAmount + msg.value) > goal)
+        // if donation too consequential, return how much is missing for goal
+        {
+            uint temp = (goal - raisedAmount);
+            warning = appendUintToString('Too much donated, project missing: ', temp);
+        }
+        require(block.number < deadline);
+        require((raisedAmount + msg.value) <= goal, warning);
+        // add donation to raised amount
+        raisedAmount+=msg.value;
+        // add donation to memory for refunds
+        donations[msg.sender] += msg.value;
+
+    }
+    
+
+    function getBalance() public view returns(uint)
+    {
+        return address(this).balance;
+    }
+    
+    // function for admin to create a payment Request
+    function createPaymentRequest(string _description, address _recipient, uint _value) public onlyAdmin{
+        
+        PaymentRequest memory newRequest = PaymentRequest(
+            {
+                description:_description,
+                value:_value,
+                recipient:_recipient,
+                numberOfVotes:0,
+                completed:false
+                }
+            );
+        
+        paymentRequests.push(newRequest);
+        
+        
+    }
+    
+    // function for whitelisted NGO miners to vote for a payment request to be accepted
+    function voteForPaymentRequest(uint index) public {
+        require(ngoMiners[msg.sender] == true, "NGO not approved miner.");
+        require(paymentRequests[index].voted[msg.sender] != true, "You have already voted.");
+        
+        paymentRequests[index].voted[msg.sender] = true;
+        paymentRequests[index].numberOfVotes++;
+    }
+    
+    // function to make payment
+    // only admin
+    // requires voting consensus to be a majority 
+    function makePayment(uint index) public onlyAdmin {
+        PaymentRequest storage thisRequest = paymentRequests[index];
+        require(thisRequest.completed == false);
+        require(thisRequest.numberOfVotes > totalMiners / 2);//more than 50% voted
+        thisRequest.recipient.transfer(thisRequest.value);
+        thisRequest.completed = true;
+    }
+    
+    
+    // function to refund if project goal was not acheived before deadline
+    function noGoalRefund() public {
+        require(block.number > deadline); // require deadline passed (block number passed deadline block number)
+        require(raisedAmount < goal); // require goal not achieved
+        require(donations[msg.sender] > 0); // make sure donation was made
+        
+        
+        msg.sender.transfer(donations[msg.sender]); // transfer amount donated to project back
+        donations[msg.sender] = 0; // reset history to avoid multiple refunds
+       
+    }
+}
