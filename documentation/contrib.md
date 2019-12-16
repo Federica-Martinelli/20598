@@ -1,14 +1,17 @@
 # CONTRIBUTIONS 
 
 ### 15/11/2019
-The team is formed, the idea's material is shared among the members and a date for a first team meeting is set
+The team is formed, Federica shares the idea's material the members and a date for a first team meeting is set.
 
 ### 18/11/2019
 The team meets to narrow down the idea to try and solve the problem of fraud when it comes to private donations to NGOs. 
-
+Federica and Andrea present two relevant papers that the team should read to be up to date with the issue.
 
 ### 19/11/2019
-The team members work individually and in pairs to a new blockchain that could be used to solve our issue of tracking donations in an immutable way.
+Clara, Valentina and Federica meet to find out more on the issue of frauds in charities. Amaury and Andrea start to work to a new blockchain that could be used to solve our issue of tracking donations in an immutable way.
+
+### 20/11/2019
+The team meets since we have scheduled an office hour with the professor. Andrea and Amaury show what they have reached so far and we all try to improve on what they have written.
 
 ### 21/11/2019
 The team meets to try and implement its own blockchain for this project but then, after talking with the Professor, realizes the best way to address the issue is actually to write a Solidity contract to be deployed on Ethereum. During this meeting the GitHub repository is also setup
@@ -30,9 +33,13 @@ Amaury suggests on the group chat to deploy the contract using web3, the rest of
 The team meets on Skype so that Amaury can show us how to implement the contract using web3. He manages to write a contract using web3 but we still have the issue of how to guarantee the validity of transactions, i.e. how to structure the role of the information miners.
 
 ### 09/12/2019
-The team meets with the Professor to discuss more into detail how to include the vote of the information miners in the contract and also how does the payback work in different situations. We then meet on Skype to discuss how to iclude this function in both the Solidity contract and the Python implementation. 
+Clara, Valentina and Federica meet the Professor to discuss more into detail how to include the vote of the information miners in the contract and also how does the payback work in different situations. We then meet on Skype to update Amaury and Andrea and we discuss how to include this function in both the Solidity contract and in the Python implementation. 
 
 ### 10/12/2019-13/12/2019
-The members work individually and in group on finishing the remaining tasks. Amaury and Andrea take care of completing the coding part, while Clara, Federica and Valentina work on the presentation and repository. We think of modifying the contract further by including a message which outputs the amount missing to reach the target for a specific project so that it is not possible to donate more than the goal for a certain project. Moreover, we take care of how to convert a deadline from number of days to number of blocks
+The members work individually and in group on finishing the remaining tasks. Amaury and Andrea take care of completing the coding part, while Clara, Federica and Valentina work on the report and repository. We think of modifying the contract further by including a message which outputs the amount missing to reach the target for a specific project so that it is not possible to donate more than the goal for a certain project. Moreover, we take care of how to convert a deadline from number of days to number of blocks. 
+
+### 16/12/2019
+We finish to format all the deliverables, so that they can be uploaded in time for the deadline.
+
 
 
