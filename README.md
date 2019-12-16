@@ -24,6 +24,7 @@ The files for this project are organized in the following way:
         *  __contract.txt__: Solidity contract coded and compiled in Remix official Ethereum compiler
         *  __using_contract.ipynb__: Example showcasing the various steps to use the contract
         *  __json_files__: Folder containing json files of the compiled contract
+        *  __INSTALL: TO BE COMPLETED (AND UPLOADED)
     *  __past_versions__:
         *  __ngo_blockchain__: Folder containing code to create our own blockchain (this project was abandoned)
         *  __smart_contract__: Folder containing a previous version of the smart contract and of the notebook to try its features
