@@ -15,11 +15,13 @@ Additionally, the coinapi key is the free version and only allows for 100 reques
 
 ## Project Organization
 The files for this project are organized in the following way:
-1.  Folder __notebooks__: Contains 2 notebooks:
-    *  __Contract__: Contains the Solidity contract coded and compiled in Remix official Ethereum compiler
-    *  __Using_Contract__: Contains an example showcasing the various steps to use the contract 
-2.  Folder __json_files__: Contains 2 files:
-    *  __abi_v2.json__: TO BE COMPLETED
-    *  __bytecode_v2.json__: TO BE COMPLETED
-3.  File __Contributors_Information.txt__: Contains the daily tasks carried out by the team to complete the project 
-4.  File __NGOs_Fintech.pdf__: Contains the presentation/report which explains our project in a more complete way
+1.  Folder __notebooks__: Contains 2 files:
+    *  __Contract__: Contains the Solidity contract coded and compiled in Remix official Ethereum compiler. The contract is in .txt format 
+    *  __Using_Contract__: Contains an example showcasing the various steps to use the contract. The file is in .ipynb format. 
+2.  Folder __json_files__: Contains 2 files storing the metadata of the contract :
+    *  __abi_v2.json__
+    *  __bytecode_v2.json__
+3.  Folder __past_versions__: Contains the past versions of the presentation and of the code. For the most part, the code was updated in place   
+4.  File __Contributors_Information.txt__: Contains the daily tasks carried out by the team to complete the project 
+5.  File __NGOs_Fintech.pdf__: Contains the presentation/report which explains our project in a more complete way
+
