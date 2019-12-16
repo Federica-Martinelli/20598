@@ -76,6 +76,15 @@
 	},
 	{
 		"constant": false,
+		"inputs": [],
+		"name": "noGoalRefund",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
 		"inputs": [
 			{
 				"name": "index",
@@ -156,6 +165,25 @@
 		"constant": true,
 		"inputs": [],
 		"name": "raisedAmount",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "donations",
 		"outputs": [
 			{
 				"name": "",
