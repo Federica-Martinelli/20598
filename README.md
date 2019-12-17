@@ -19,21 +19,12 @@ The files for this project are organized in the following way:
     *  __contrib.md__: Daily tasks carried out by the team to complete the project 
 2.  Folder __summary__:
     *  __NGOs_fintech.pdf__: Presentation which explains our project in a more complete way
-3.  Folder __scr__: Contains:
+3.  Folder __scr__:
     *  __final_version__:
         *  __contract.txt__: Solidity contract coded and compiled in Remix official Ethereum compiler
-        *  __using_contract.ipynb__: Solidity contract coded and compiled in Remix official Ethereum compiler
-        
-    
-
-
-
-    *  __Contract__: Contains the Solidity contract coded and compiled in Remix official Ethereum compiler. The contract is in .txt format 
-    *  __Using_Contract__: Contains an example showcasing the various steps to use the contract. The file is in .ipynb format. 
-2.  Folder __json_files__: Contains 2 files storing the metadata of the contract :
-    *  __abi_v2.json__
-    *  __bytecode_v2.json__
-3.  Folder __past_versions__: Contains the past versions of the presentation and of the code. For the most part, the code was updated in place   
-4.  File __Contributors_Information.txt__: Contains the daily tasks carried out by the team to complete the project 
-5.  File __NGOs_Fintech.pdf__: Contains the presentation/report which explains our project in a more complete way
-
+        *  __using_contract.ipynb__: Example showcasing the various steps to use the contract
+        *  __json_files__: Folder containing json files of the compiled contract
+        *  __INSTALL__: TO BE COMPLETED (AND UPLOADED)
+    *  __past_versions__:
+        *  __ngo_blockchain__: Folder containing code to create our own blockchain (this project was abandoned)
+        *  __smart_contract__: Folder containing a previous version of the smart contract and of the notebook to try its features
