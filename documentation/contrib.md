@@ -18,7 +18,7 @@ The team meets to try and implement its own blockchain for this project but then
 
 ### 22/11/2019-24/11/2019
 The team members work in pairs to decide which functions to include in the smart contract and start coding it.
-Initially, we think of creating two smart contracts, one for the transactions between the donor and the digital wallet and one between the wallet and the NGOs. The problem is how to make these contracts communicate. Andrea, Federica and AMaury think of implementing the first contract, Valentina and Clara think of how to structure the second one.
+Initially, we think of creating two smart contracts, one for the transactions between the donor and the digital wallet and one between the wallet and the NGOs. The problem is how to make these contracts communicate. Andrea, Federica and Amaury think of implementing the first contract, Valentina and Clara think of how to structure the second one.
 
 ### 25/11/2019
 The team meets with the Professor to outline an initial structure for the contract and it discusses how to solve two main issues. First, how to make the two contracts talk to each other. Second, the issue of checking whether an NGO is actually using the funds for the project it should. With regard to the former, the professor suggests using one contract to handle all transactions as having two communicating contracts would be cumbersome to implement given the recent Solidity update. With the regard to the latter, the idea of having information miners is created.
@@ -40,6 +40,3 @@ The members work individually and in group on finishing the remaining tasks. Ama
 
 ### 16/12/2019
 We finish to format all the deliverables, so that they can be uploaded in time for the deadline.
-
-
-
