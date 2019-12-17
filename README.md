@@ -3,9 +3,7 @@
 ## Getting Started
 For this university project we implemented a smart contract with the aim of applying blockchain technology to the NGO world.
 The main purpose is to combat fraud and increase people's trust in NGOs.
-
 The key aspect of the contract is its immutable mission, location, goal and deadline once deployed as well as the presence of a consensus-based payment function as a safety feature to combat embezzlement.
-
 The code is contained in a Jupyter Notebook.
 
 ## Prerequisites
@@ -17,8 +15,7 @@ Additionally, the coinapi key is the free version and only allows for 100 reques
 The files for this project are organized in the following way:
 1.  Folder __documentation__:
     *  __contrib.md__: Daily tasks carried out by the team to complete the project
-    *  __project_evolution.md__: More complete documentation regarding the logic that was used to develop the project
-    
+    *  __project_evolution.md__: More complete documentation regarding the logic that was used to develop the project    
 2.  Folder __summary__:
     *  __NGOs_fintech.pdf__: Presentation which explains our project in a more complete way
 3.  Folder __scr__:
