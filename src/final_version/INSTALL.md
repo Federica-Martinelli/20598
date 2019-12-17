@@ -86,36 +86,53 @@ As this project was made over multiple days/weeks with countless compatibility p
 *  nbformat==4.4.0
 *  netaddr==0.7.19
 *  notebook==6.0.2
-numpy==1.17.4
-pandas==0.25.3
-pandocfilters==1.4.2
-parsimonious==0.8.1
-parso==0.5.1
-pickleshare==0.7.5
-prometheus-client==0.7.1
-prompt-toolkit==2.0.10
-protobuf==3.11.1
-pure-interface==3.5.2
-py-solc-x==0.6.0
-PyContracts==1.8.12
-pycryptodome==3.9.4
-Pygments==2.5.2
-pyparsing==2.4.5
-pypiwin32==223
-pyrsistent==0.15.6
-python-dateutil==2.8.1
-python-interface==1.5.3
-pytz==2019.3
-pywin32==227
-pywinpty==0.5.7
-pyzmq==18.1.1
-qtconsole==4.6.0
-requests==2.22.0
-requests-cache==0.5.2
-rlp==1.2.0
-semantic-version==2.8.3
-Send2Trash==1.5.0
-six==1.13.0
-solc==0.0.4
-terminado==0.8.3
-testpath==0.4.4
+*  numpy==1.17.4
+*  pandas==0.25.3
+*  pandocfilters==1.4.2
+*  parsimonious==0.8.1
+*  parso==0.5.1
+*  pickleshare==0.7.5
+*  prometheus-client==0.7.1
+*  prompt-toolkit==2.0.10
+*  protobuf==3.11.1
+*  pure-interface==3.5.2
+*  py-solc-x==0.6.0
+*  PyContracts==1.8.12
+*  pycryptodome==3.9.4
+*  Pygments==2.5.2
+*  pyparsing==2.4.5
+*  pypiwin32==223
+*  pyrsistent==0.15.6
+*  python-dateutil==2.8.1
+*  python-interface==1.5.3
+*  pytz==2019.3
+*  pywin32==227
+*  pywinpty==0.5.7
+*  pyzmq==18.1.1
+*  qtconsole==4.6.0
+*  requests==2.22.0
+*  requests-cache==0.5.2
+*  rlp==1.2.0
+*  semantic-version==2.8.3
+*  Send2Trash==1.5.0
+*  six==1.13.0
+*  solc==0.0.4
+*  terminado==0.8.3
+*  testpath==0.4.4
+*  toolz==0.10.0
+*  tornado==6.0.3
+*  traitlets==4.3.3
+*  typing==3.7.4.1
+*  typing-extensions==3.7.4.1
+*  urllib3==1.25.7
+*  varint==1.0.2
+*  wcwidth==0.1.7
+*  web3==5.4.0
+*  webencodings==0.5.1
+*  websockets==8.1
+*  Werkzeug==0.16.0
+*  widgetsnbextension==3.5.1
+*  zipp==0.6.0
+*  zope.event==4.4
+*  zope.interface==4.7.1
+*  zope.schema==4.9.3
