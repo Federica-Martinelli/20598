@@ -16,7 +16,9 @@ Additionally, the coinapi key is the free version and only allows for 100 reques
 ## Project Organization
 The files for this project are organized in the following way:
 1.  Folder __documentation__:
-    *  __contrib.md__: Daily tasks carried out by the team to complete the project 
+    *  __contrib.md__: Daily tasks carried out by the team to complete the project
+    *  __project_evolution.md__: More complete documentation regarding the logic that was used to develop the project
+    
 2.  Folder __summary__:
     *  __NGOs_fintech.pdf__: Presentation which explains our project in a more complete way
 3.  Folder __scr__:
