@@ -1,4 +1,4 @@
-NGOs Smart Contract - 20598
+# NGOs Smart Contract - 20598
 
 ## Getting Started
 For this university project we implemented a smart contract with the aim of applying blockchain technology to the NGO world as a group assignment for the Bocconi University course Fintech and Blockchains - 20598.
