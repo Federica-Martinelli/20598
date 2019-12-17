@@ -34,3 +34,10 @@ The __files__ for this project are organized in the following way:
     *  __past_versions__:
         *  __ngo_blockchain__: Folder containing code to create our own blockchain (this project was abandoned)
         *  __smart_contract__: Folder containing a previous version of the smart contract and of the notebook to try its features
+        
+ ## Authors
+*   __Andrea Borsani__ - https://github.com/Andrea0Borsani
+*   __Amaury Garde__ - https://github.com/AmauryGarde
+*   __Clara Marioni__ - https://github.com/C3007455
+*   __Federica Martinelli__ - https://github.com/Federica-Martinelli
+*   __Valentina Parietti__ - https://github.com/ValentinaParietti
