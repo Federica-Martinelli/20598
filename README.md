@@ -1,13 +1,13 @@
 # NGOs Smart Contract - 20598
 
 ## Getting Started
-For this university project we implemented a smart contract with the aim of applying blockchain technology to the NGO world as a group assignment for the Bocconi University course Fintech and Blockchains - 20598.
+For this project we implemented a __smart contract__ with the aim of applying __blockchain technology__ to the __NGO world__ as a group assignment for the Bocconi University course _Fintech and Blockchains - 20598_.
 
-The main purpose is to combat fraud and increase people's trust in NGOs.
+The main purpose is to __combat fraud and increase people's trust in NGOs__.
 
-The key aspect of the contract is its immutable mission, location, goal and deadline once deployed as well as the presence of a consensus-based payment function as a safety feature to combat embezzlement.
+The key aspect of the contract is its __immutable mission, location, goal and deadline__ once deployed as well as the presence of a __consensus-based payment function__ as a safety feature to combat embezzlement.
 
-The code is contained in a Jupyter Notebook.
+The code is contained in a __Jupyter Notebook__.
 
 ## Prerequisites
 If you desire to run the notebook you will need to open a Ganache application to simulate different ether wallets. 
