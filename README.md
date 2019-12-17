@@ -1,7 +1,7 @@
 # NGOs Smart Contract - 20598
 
 ## Getting Started
-For this project we implemented a __smart contract__ with the aim of applying __blockchain technology__ to the __NGO world__ as a __group assignment__ for the _Bocconi University course "Fintech with Big Data - 20598"_.
+For this project we implemented an __Ethereum smart contract__ with the aim of applying __blockchain technology__ to the __NGO world__ as a __group assignment__ for the _Bocconi University course "Fintech with Big Data - 20598"_.
 
 The main purpose is to __combat fraud and increase people's trust in NGOs__.
 
